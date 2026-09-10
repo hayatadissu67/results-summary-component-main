@@ -5,183 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet"  href="style.css">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap');
-    * { box-sizing: border-box; }
-    body
-     { margin: 0;
-            min-height: 100vh;
-           margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background: #f1f5ff;
-            font-family: Arial, sans-serif;
-    }  
-      .big_container { 
-       background: white;
-        display: flex;  
-        border-radius: 20px; 
-        width: 650px;
-      
-      } 
-      .left_container {
-      
-        width: 50%; 
-        background: linear-gradient(
-    to bottom,
-    hsl(252, 100%, 67%),
-    hsl(241, 81%, 54%));
-        border-radius: 20px; 
-      
-        padding: 20px;  
-        color: hsl(0, 0%, 100%);
-      }
-     .left_container h3{
-        font-size: 20px;
-        text-align: center;
-
-      }
-      .circle {
-        width: 150px; 
-        height: 150px; 
-        border-radius: 50%;
-         background: linear-gradient( to bottom,
-    hsla(256, 72%, 46%, 1),
-    hsla(241, 72%, 46%, 0) );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px; 
-    margin: 20px auto; 
-      }
-    .score{
-       font-size: 48px;
-       font-weight: bold;
-    }
-    .out-of{
-      font-size: 12px;
-    opacity: 0.6;
-    }
-      .result-bottom {
-        margin-top: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-    }
-    .result-bottom h1 {
-        font-size: 22px;
-        margin: 0 0 15px;
-        text-align: center;
-    }
-
-
-    .result-bottom p {
-        font-size: 12px;
-        line-height: 1.5;
-        text-align: center;
-        max-width: 180px;
-        max-width: 220px;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 1.5;
-        opacity: 0.8;
-    }
-    .summary{
-       margin-left: 20px;
-       
-    } 
-
-.summary h2{
-        color: hsl(224, 30%, 27%);
-        font-size: 20px;
-  
-}
-.summary-reaction {
-        background-color:hsl(0, 100%, 67%, 0.1);
-        border-radius: 10px;
-        height: 50px;
-        width: 290px;
-        display: flex;
-        justify-content: space-between;
-        align-items : center;
-        padding: 10px;
-    }
-.summary-memory {
-        background-color: hsl(39, 100%, 56% , 0.1);
-        border-radius: 10px;
-        height: 50px;
-       display: flex;
-        justify-content: space-between;
-        align-items : center;
-        padding: 10px;
-    }
-.summary-verbal {
-        background-color: hsl(166, 100%, 37% , 0.1);
-        border-radius: 10px;
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items : center;
-        padding: 10px;
-    }
-.summary-visual {
-        background-color: hsl(234, 85%, 45% , 0.1);
-        border-radius: 10px;
-        height: 50px;
-         display: flex;
-        justify-content: space-between;
-        align-items : center;
-        padding: 10px;
-    }
-   .sum     {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 10px;
-      
-    }
-    .category1{
-   color: hsl(0, 100%, 67%);
-   margin-right: 120px;
-    }
-    .category2{
-      color:hsl(39, 100%, 56%);
-      margin-right: 120px;
-    }
-    .category3{
-      color:hsl(166, 100%, 37%);
-      margin-right: 124px;
-    }
-    .category4{
-      color:hsl(234, 85%, 45%);
-      margin-right: 125px;
-    }
-    .summary button {
-    width: 100%;
-    height: 60px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 30px;
-    background: #303b5a;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 
 
@@ -209,26 +34,34 @@
     <h2>Summary</h2>
    <div class="sum">
     <div class="summary-reaction">
+      <div class="category1">
       <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
-        <span class="category1"> Reaction</span>
+        <span > Reaction</span>
+        </div>
         <span class="score-1">80 <small>/ 100</small></span>
     </div>
        
     <div class="summary-memory">
+      <div class="category2">
         <img src="./assets/images/icon-memory.svg" alt="memory icon">
-        <span class="category2">Memory</span>
+        <span >Memory</span>
+        </div>
         <span class="score-1">92 <small>/ 100</small></span>
     </div>
 
     <div class="summary-verbal">
+      <div class="category3">
       <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
-        <span class="category3">Verbal</span>
+        <span >Verbal</span>
+        </div>
         <span class="score-1">61 <small>/ 100</small></span>
     </div>
 
     <div class="summary-visual">
+      <div class="category4">
       <img src="./assets/images/icon-visual.svg" alt="visual icon">
-        <span class="category4">Visual</span>
+        <span >Visual</span>
+        </div>
         <span class="score-1">73 <small>/ 100</small></span>
     </div>
   </div>
